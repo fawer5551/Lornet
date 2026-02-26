@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lornet — The Future of Everyday Apps</title>
+  <meta name="description"
+    content="Lornet reimagines the default apps on your phone. Calculator, Calendar, Clock, Notes — all rebuilt from the ground up with a futuristic vision.">
+  <meta name="keywords"
+    content="Lornet, futuristic apps, calculator, calendar, clock, notes, weather, camera, iOS, Android">
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300e5ff'/%3E%3Cstop offset='100%25' stop-color='%237c4dff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='55' font-weight='bold' fill='%2306080f' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">L</div>
+        Lornet
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#apps">Apps</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#contact" class="nav-cta">Get Early Access</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb--1"></div>
+      <div class="hero-orb hero-orb--2"></div>
+      <div class="hero-orb hero-orb--3"></div>
+    </div>
+    <div class="hero-grid"></div>
+    <canvas id="hero-particles"></canvas>
+
+    <div class="container">
+      <div class="hero-badge">
+        <span class="pulse"></span>
+        Now in Development
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Your Phone Apps,</span>
+        <span class="line"><span class="gradient-text">Reimagined.</span></span>
+      </h1>
+      <p class="hero-description">
+        Lornet takes the default apps you use every day — Calculator, Calendar, Clock, Notes — and rebuilds them from
+        the ground up with futuristic design, smarter features, and seamless experiences.
+      </p>
+      <div class="hero-actions">
+        <a href="#apps" class="btn btn-primary">
+          Explore Our Apps
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#about" class="btn btn-secondary">
+          Learn More
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-count="6" data-suffix="+">0+</div>
+          <div class="hero-stat-label">Apps in Progress</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-count="2026">0</div>
+          <div class="hero-stat-label">Launch Year</div>
+        </div>
+        <div class="hero-stat">
+          <div class="hero-stat-value" data-count="100" data-suffix="%">0%</div>
+          <div class="hero-stat-label">Free to Use</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <span class="section-label">Who We Are</span>
+          <h2 class="section-title">
+            We're Building the<br>
+            <span class="gradient-text">Next Generation</span> of<br>
+            Everyday Apps
+          </h2>
+          <p class="about-text">
+            Lornet was founded with a simple question: <em>What if the apps that came with your phone were actually
+              amazing?</em> Default apps haven't evolved in years. We're changing that.
+          </p>
+          <p class="about-text">
+            We take the apps you already know — your calculator, your calendar, your clock — and re-engineer them with
+            cutting-edge design, smart AI-powered features, and the kind of polish usually reserved for premium
+            software. And we're making it all free.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature reveal reveal-delay-1">
+              <div class="about-feature-icon">⚡</div>
+              <div>
+                <h4>Futuristic Design</h4>
+                <p>Every pixel crafted with a vision of tomorrow's interface</p>
+              </div>
+            </div>
+            <div class="about-feature reveal reveal-delay-2">
+              <div class="about-feature-icon">🧠</div>
+              <div>
+                <h4>AI-Enhanced</h4>
+                <p>Smart features that learn from how you use your apps</p>
+              </div>
+            </div>
+            <div class="about-feature reveal reveal-delay-3">
+              <div class="about-feature-icon">🎯</div>
+              <div>
+                <h4>Zero Bloat</h4>
+                <p>Lightweight, fast, and focused — nothing you don't need</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual reveal">
+          <div class="about-visual-card">
+            <div class="about-phone-grid">
+              <div class="about-phone-app">
+                🔢
+                <span>Calc</span>
+              </div>
+              <div class="about-phone-app">
+                📅
+                <span>Calendar</span>
+              </div>
+              <div class="about-phone-app">
+                ⏰
+                <span>Clock</span>
+              </div>
+              <div class="about-phone-app">
+                📝
+                <span>Notes</span>
+              </div>
+              <div class="about-phone-app">
+                🌦️
+                <span>Weather</span>
+              </div>
+              <div class="about-phone-app">
+                📸
+                <span>Camera</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       APPS SHOWCASE
+       ============================================ -->
+  <section class="apps" id="apps">
+    <div class="container">
+      <div class="apps-header reveal">
+        <span class="section-label">Our Apps</span>
+        <h2 class="section-title">
+          Same Apps You Know.<br>
+          <span class="gradient-text">Completely Rebuilt.</span>
+        </h2>
+        <p class="section-subtitle">
+          Each app is redesigned from scratch with a futuristic UI, smarter workflows, and features that default apps
+          should have had years ago.
+        </p>
+      </div>
+
+      <div class="apps-grid">
+
+        <!-- Calculator -->
+        <div class="app-card reveal reveal-delay-1" data-accent="cyan">
+          <div class="app-card-icon">🔢</div>
+          <span class="app-card-badge badge-beta">Beta Ready</span>
+          <h3>Lornet Calc</h3>
+          <p>A calculator that does more than basic math. Unit conversions, equation history, graphing mode, and an AI
+            assistant that explains step-by-step solutions.</p>
+          <div class="app-card-features">
+            <span>Graphing</span>
+            <span>Unit Converter</span>
+            <span>History</span>
+            <span>AI Solver</span>
+          </div>
+        </div>
+
+        <!-- Calendar -->
+        <div class="app-card reveal reveal-delay-2" data-accent="purple">
+          <div class="app-card-icon">📅</div>
+          <span class="app-card-badge badge-development">In Development</span>
+          <h3>Lornet Calendar</h3>
+          <p>A calendar that actually helps you plan. Smart time-blocking, habit tracking, weather integration, and
+            natural language event creation.</p>
+          <div class="app-card-features">
+            <span>Smart Scheduling</span>
+            <span>Habit Tracking</span>
+            <span>Weather</span>
+            <span>NLP Input</span>
+          </div>
+        </div>
+
+        <!-- Clock -->
+        <a href="downloads/lornet-clock.zip" download class="app-card-link">
+          <div class="app-card reveal reveal-delay-3" data-accent="magenta">
+            <div class="app-card-icon">⏰</div>
+            <span class="app-card-badge badge-beta">Available Now</span>
+            <h3>Lornet Clock</h3>
+            <p>World clock, alarms, timers, and a stunning stopwatch — all wrapped in a futuristic interface with sleep
+              tracking and focus timers built in.</p>
+            <div class="app-card-features">
+              <span>Sleep Tracker</span>
+              <span>Focus Timer</span>
+              <span>World Clock</span>
+              <span>Custom Alarms</span>
+            </div>
+            <div class="app-card-download">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" />
+              </svg>
+              Download App
+            </div>
+          </div>
+        </a>
+
+        <!-- Notes -->
+        <div class="app-card reveal reveal-delay-4" data-accent="blue">
+          <div class="app-card-icon">📝</div>
+          <span class="app-card-badge badge-concept">Concept</span>
+          <h3>Lornet Notes</h3>
+          <p>Notes reimagined as a personal knowledge base. Rich markdown editing, AI-powered summarization,
+            voice-to-text, and cross-device sync.</p>
+          <div class="app-card-features">
+            <span>Markdown</span>
+            <span>AI Summaries</span>
+            <span>Voice Input</span>
+            <span>Sync</span>
+          </div>
+        </div>
+
+        <!-- Weather -->
+        <div class="app-card reveal reveal-delay-5" data-accent="green">
+          <div class="app-card-icon">🌦️</div>
+          <span class="app-card-badge badge-concept">Concept</span>
+          <h3>Lornet Weather</h3>
+          <p>Hyper-local weather with gorgeous visualizations. Animated radar, outfit suggestions, commute forecasts,
+            and severe weather alerts.</p>
+          <div class="app-card-features">
+            <span>Live Radar</span>
+            <span>Outfit Advisor</span>
+            <span>Commute Forecast</span>
+            <span>Alerts</span>
+          </div>
+        </div>
+
+        <!-- Camera -->
+        <div class="app-card reveal reveal-delay-6" data-accent="orange">
+          <div class="app-card-icon">📸</div>
+          <span class="app-card-badge badge-concept">Concept</span>
+          <h3>Lornet Camera</h3>
+          <p>A camera app with built-in AI editing, real-time filters, document scanning, and a professional-grade
+            manual mode — no third-party apps needed.</p>
+          <div class="app-card-features">
+            <span>AI Editor</span>
+            <span>Real-time Filters</span>
+            <span>Doc Scanner</span>
+            <span>Pro Mode</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ROADMAP SECTION
+       ============================================ -->
+  <section class="roadmap" id="roadmap">
+    <div class="container">
+      <div class="roadmap-header reveal">
+        <span class="section-label">Our Roadmap</span>
+        <h2 class="section-title">
+          What's <span class="gradient-text">Coming Next</span>
+        </h2>
+        <p class="section-subtitle">
+          We're building in public. Here's our plan for 2026 and beyond.
+        </p>
+      </div>
+
+      <div class="roadmap-timeline">
+
+        <!-- Q1 2026 -->
+        <div class="roadmap-item reveal">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-content">
+            <div class="roadmap-quarter">Q1 2026</div>
+            <h3>Foundation & Calculator Beta</h3>
+            <p>Launch the Lornet website, release the Calculator beta to early testers, and begin building our community
+              of power users who want better default apps.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Website Launch</span>
+              <span class="roadmap-tag">Calc Beta</span>
+              <span class="roadmap-tag">Community</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 2026 -->
+        <div class="roadmap-item reveal">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-content">
+            <div class="roadmap-quarter">Q2 2026</div>
+            <h3>Calendar & Clock Development</h3>
+            <p>Begin full development of Lornet Calendar and Clock. Integrate user feedback from the Calc beta. Start
+              designing the AI engine that powers smart features.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Calendar Dev</span>
+              <span class="roadmap-tag">Clock Dev</span>
+              <span class="roadmap-tag">AI Engine</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 2026 -->
+        <div class="roadmap-item reveal">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-content">
+            <div class="roadmap-quarter">Q3 2026</div>
+            <h3>Multi-App Beta & Notes</h3>
+            <p>Launch Calendar and Clock betas alongside Calc 1.0. Begin Notes development with a focus on AI
+              summarization and markdown editing capabilities.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">Calendar Beta</span>
+              <span class="roadmap-tag">Clock Beta</span>
+              <span class="roadmap-tag">Notes Dev</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 2026 -->
+        <div class="roadmap-item reveal">
+          <div class="roadmap-dot"></div>
+          <div class="roadmap-content">
+            <div class="roadmap-quarter">Q4 2026</div>
+            <h3>Full Suite Launch</h3>
+            <p>Release the complete Lornet suite — Calculator, Calendar, Clock, and Notes — on both iOS and Android.
+              Kick off Weather and Camera concept development.</p>
+            <div class="roadmap-tags">
+              <span class="roadmap-tag">iOS Launch</span>
+              <span class="roadmap-tag">Android Launch</span>
+              <span class="roadmap-tag">Full Suite</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       VISION SECTION
+       ============================================ -->
+  <section class="vision" id="vision">
+    <div class="container">
+      <div class="vision-card reveal">
+        <span class="section-label" style="justify-content: center;">Our Vision</span>
+        <h2 class="vision-quote">
+          "Default apps shouldn't mean<br>
+          <span class="gradient-text">default experience."</span>
+        </h2>
+        <p class="vision-text">
+          We believe everyone deserves software that's beautiful, thoughtful, and free. Lornet is more than an app
+          company — it's a movement to prove that the tools you use every day deserve to be extraordinary.
+        </p>
+
+        <div class="vision-stats">
+          <div class="vision-stat">
+            <div class="vision-stat-value" data-count="6" data-suffix="+">0+</div>
+            <div class="vision-stat-label">Apps Planned</div>
+          </div>
+          <div class="vision-stat">
+            <div class="vision-stat-value" data-count="2">0</div>
+            <div class="vision-stat-label">Platforms</div>
+          </div>
+          <div class="vision-stat">
+            <div class="vision-stat-value" data-count="0" data-prefix="$">$0</div>
+            <div class="vision-stat-label">Price Forever</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">L</div>
+            Lornet
+          </div>
+          <p>Reimagining the apps your phone forgot to upgrade. Built with obsession, designed for tomorrow.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#apps">Our Apps</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#">Beta Program</a></li>
+            <li><a href="#">Changelog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#vision">Vision</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:hello@lornet.app">hello@lornet.app</a></li>
+            <li><a href="#">Twitter / X</a></li>
+            <li><a href="#">Discord</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lornet. All rights reserved.</p>
+        <div class="footer-socials">
+          <a class="footer-social" href="#" aria-label="Twitter">𝕏</a>
+          <a class="footer-social" href="#" aria-label="Discord">💬</a>
+          <a class="footer-social" href="#" aria-label="GitHub">⌨</a>
+          <a class="footer-social" href="#" aria-label="Email">✉</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
